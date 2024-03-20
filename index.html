@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta mame="autor" content="Martin A Bocanegra Lopez">
+  <meta mame="descripcion" content="Challenge G6 ONE Principiante de programacion-Oracle Next Education
+  y Alura Latam">
+  <meta name="viewport" content="width=device-width">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Encriptador de Texto</title>
+  <link rel="stylesheet" href="reset.css" type="text/css"/>
+  <link rel="shortcut icon" href="img/Jg-Martin.png" type="image/x-icon" />
+  <link rel="stylesheet" href="styles.css" type="text/css"/>
+<link rel="stylesheet" href="style.css " type="text:/css"/>
+</head>
+
+<body>
+  <main>
+    <header>
+      <div class="titulo">
+        <p>ENCRIPTADOR DE TEXTOS</p>
+      </div>
+    </header>
+    <div class="container">
+      <img src="/img/logo.png" alt="" id="logo1" />
+      <div class="encriptar">
+  font-weight: 490;
+  font-weight: 490;
+  <div class="texto1"> <textarea name="texto1" id="texto1" cols="60" rows="35" placeholder="Ingresa el texto..." oninput="validarTexto()"style="background-color: #FFFFFF80;font-family: 'Lucida Sans';/*! font-style: normal; *//*! font-weight: 49; */"></textarea>
+        <span id="mensajeError"></span>
+
+        
+       </div> 
+          <div class="terminos">
+            <p>Solo letras minúsculas y sin acentos.</p>
+          </div>     
+        <div class="botones">
+          <input type= type="button" class="btn-encriptar" value="Encriptar" onclick="encriptar()"/>
+          
+    <!-- <textarea name="texto" class="texto" id="texto" cols="30" rows="10" placeholder="Ingresa el texto aquí" oninput= "validarTexto"()></textarea> -->
+         
+          <input type="button" class="btn-desencriptar" value="Desencriptar" onclick="desencriptar()"/>
+        </div>
+      </div>
+
+      <div class="encriptado">
+        <div class="controls1">
+
+          <audio controls>
+            <source src="cancion.mp3" type="audio/mpeg" />
+            <source src="cancion.mp3" type="audio/ogg" />
+            <p2>
+              <a href="cancion.mp3" download="cancion.mp3">MP3</a>
+              <a href="cancion.mp3" download="cancion.ogg">OGG</a> audio.
+            </p2>
+          </audio>
+        </div>
+        <img src="img/muñeco.png" alt="" id="muñeco" />
+
+        <div class="mensaje-encriptado" id="mensaje-encriptado">
+          <h2 id="titulo-mensaje"><strong>ningún mensaje fue encontrado</strong></h2>
+          <p id="parrafo">
+            Ingresa el texto que deseas encriptar o desencriptar
+          </p>
+
+
+          <p>Creado por Matin Boconegra Lopez ONE & Alura </p>
+          <div >
+            
+            <div class="botton">
+              <div id="resultado">
+                  
+              </div>
+              <button class="btn-copiar" type="button" onclick="copiar()"> copiar
+              </button>
+          </div>
+         
+            <!-- <button class="btn-encriptar" type="button" onclick="encriptar()">
+            Encriptar
+          </button>
+          <input type="button" class="btn-desencriptar" value="Desencriptar" onclick="desencriptar()" /> -->
+
+
+            
+
+         </div>
+               <ul>
+        
+              <li><a id="footergithub" href="https://github.com/josemartin1275">github</a></li>
+              <li><a id="footerlinkedin" href="https://www.linkedin.com/feed/">linkedin</a></li>
+              <li><a id="footercodegym" href="https://codegym.cc/es/projects/apps/137615?fbclid=IwAR0yVXai8ja0TMXF1fs0zmR8AJAceE8VcJAWBYX4wBZLlyrunAptdG0aExA">codegym</a>
+              </li>
+              <li><a id="footertwitter" href="https://twitter.com/josemartin1275">twitter</a></li>
+
+            </ul>
+          
+
+          <small>&lt;&lt;&lt; &copy; Copyright - 2024 -| Matin Bocanegra| &gt;&gt;&gt;</small>
+
+        </div>
+
+        
+
+      </div>
+      
+    </div>
+    
+  </main>
+  <script src="app.js"></script>
+  
+</body>
+
+
+  <footer>
+    <p3>© ORACLE ONE G-6 - 2024</p3>
+</footer>
+
+</html>
+/* Responsive design */
+<!-- @media (max-width: 57.5em) {
+  .container {
+    display: flex;
+    flex-direction: row;
+    
+  }
+  .encriptar {
+    width: 100%;
+  }
+  .texto {
+    width: 80%;
+    height: 60%;
+    left: 10%;
+    top: 5%;
+  }
+  .terminos {
+    width: 80%;
+    left: 10%;
+    top: 67%;
+  }
+  .terminos p {
+    font-size: 16px;
+  }
+  .botones {
+    width: 80%;
+    left: 10%;
+    top: 70%;
+  }
+  .btn-encriptar,
+  .btn-desencriptar {
+    width: 48%;
+    border-radius: 16px;
+  }
+  .btn-encriptar:hover,
+  .btn-desencriptar:hover {
+    margin: 0.3%;
+    width: 47.5%;
+    padding: 1.8%;
+  }
+  .encriptado {
+    width: 80%;
+    height: 15%;
+    left: 10%;
+    top: 80%;
+  }
+  .mensaje-encriptado {
+    width: 100%;
+    top: 5%;
+  }
+  .encriptado img {
+    top: 0;
+    display: none;
+    visibility: hidden;
+  }
+}
+ --> 

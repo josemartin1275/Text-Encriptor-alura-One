@@ -1,0 +1,375 @@
+body{
+  background-image: url("img/fondo-encritador.png");
+}
+
+header{
+    font-size: 30px;
+    text-align: center;
+    font-family:Snap ITC;
+    color: orange;
+ 
+  } 
+  
+  .titulo, footer p3 {
+    animation-duration: 5s ;
+    animation-iteration-count: infinite;
+    animation-name: titulo;
+    border: 2px solid #f4d965;
+    
+  }
+@keyframes titulo {
+  from {
+    margin-left: 20%;
+    width: 30%;
+    
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  position: relative;
+  width: 100vw;
+  height: 150vh;
+ 
+}
+
+
+.texto1{
+  position: relative;
+  width: 45vw;
+  height: 80vh;
+  left: 12%;
+  top: 15%;
+  border: none;
+  font-family: 'Lucida Sans' ;
+  font-style: normal;
+  font-weight: 490;
+  
+
+  
+}
+
+.texto1:placeholder {
+  color:#355ec4;
+}
+
+
+.texto1:active {
+  border: none;
+  outline: none;
+}
+
+.terminos {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 8px;
+  position: absolute;
+  width: 80%;
+  left: 12%;
+  top: 80%;
+  
+}
+
+.terminos p {
+  font-family: "Barett Street";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 1cap;
+  color: #060606;
+  opacity: 5;
+  flex: 12pc;
+  order: 1;
+  flex-grow: 0;
+position: absolute;
+}
+
+.botones {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 5% 0;
+  position: absolute;
+  width: 80%;
+  left: 12%;
+  top: 82%;
+ 
+}
+
+.btn-encriptar {
+  align-items: center;
+  justify-content: center;
+  padding: 2%;
+  gap: 8px;
+  width: 25%;
+  background-color: #4d45be;
+  border-radius: 24px;
+  font-family: "Lucida Sans";
+  font-size: 18px;
+  line-height: 15px;
+  text-align: center;
+  color: #f3f0f0;
+  cursor:pointer;
+  transition: 400ms;
+}
+
+.btn-desencriptar {
+  align-items: center;
+  justify-content: center;
+  padding: 2%;
+  gap: 8px;
+  width: 25%;
+  background-color:rgb(8, 62, 225);
+  border-radius: 24px;
+  font-family: "Lucida Sans";
+  font-size: 18px;
+  line-height: 15px;
+  text-align: center;
+  color: #ffffff;
+  cursor:pointer;
+  transition: 400ms;
+  box-shadow: 10px 10px 30px 15px #201d1d;
+}
+
+
+.btn-encriptar:hover {
+  margin: 0.3%;
+  width: 25.5%;
+  padding: 1.8%;
+  transition: 400ms;
+  box-shadow: 10px 10px 30px 15px #b93a3a;
+}
+
+
+.encriptado {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  width: 30%;
+  height: 90%;
+  left: 60%;
+  top: 5%;
+  background:#804000;
+  box-shadow: 0px 26px 32px -8px rgba(0, 0, 0, 0.08);
+  border-radius: 32px;
+  transform: scale(1);
+  transition: 1s all;
+  background-color: #FFFFFF80;
+}
+
+.mensaje-encriptado {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1%;
+  gap: 16px;
+  position: absolute;
+  width: 100%;
+  top: 65%;
+  text-align: center;
+}
+.contenedor-copiar:hove{
+  display: flex;
+  position: relative;
+  bottom: 45px;
+  top: 4px;
+  position: relative
+ 
+  
+}
+.btn-copiar{
+  width: 15vw;
+  height: 35px;
+  border-radius: px;
+  background-color: #f1bcbc;
+  color: #0A3871;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: 'Lucida Sans';
+  border: 1px solid #0a19eb;
+  cursor: pointer;
+  position: relative;
+  top: 5px;
+  right: 2px;
+  padding: .8%;
+  
+  border-radius: 32px;
+  transition: 400ms;
+  box-shadow: 1px 10px 10px 1px #8b0808;
+}
+
+
+.mensaje-encriptado h2 {
+  width: 60%;
+  font-family: "Lucida Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 120%;
+  text-align: center;
+  color: #090202;
+  
+}
+
+.mensaje-encriptado p {
+  width: 80%;
+  font-family: "Lucida Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+  text-align: center;
+  color: #040404;
+  
+}
+
+.encriptado img {
+  position: absolute;
+  width: 80%;
+  height: 44%;
+  top: 20%;
+}
+
+p{font-size: 30px;
+    text-align: center;
+    font-family:Snap ITC;
+    color: orange;
+    font: 2em/1 Snap ITC;;
+}
+audio{
+  width: 30vw;
+  height: 5vh;
+  flood-opacity: 0 ,2;
+  margin: 0;
+  display: inline;
+  position:auto;
+  bottom: px;
+  top: 4px;
+  box-shadow: 0px 26px 32px -8px rgba(161, 44, 44, 0.08);
+  border-radius: 32px;
+  color: #de7c1a;
+background-color: #caad55;
+}
+ul{
+  padding: 0;
+  position: relative;
+  list-style: square ;
+  justify-content: center;
+  list-style-type:circle ;
+
+  
+}
+footer p3{
+  width: 30px;
+  height: 5px;
+  background-color: 0;
+  color: #e18310;
+  font-family:Snap ITC;
+  font-size: 30px;
+  font-style: bold;
+  padding: 10px;
+  text-align: center;
+  position:relative;
+  left: 25%;
+  top: 0%;
+  border-radius: 21px;
+  transition: 400ms
+  
+}
+@media (max-width: 2.5em) {
+  .container {
+    display: flex;
+    flex-direction: row;
+    
+  }
+  .encriptar {
+    width: 100%;
+    height: 2%;
+    position: relative;
+  }
+  .texto1,texto1:active,texto1:placeholder {
+    width: 80%;
+    height: 60%;
+    left: 10%;
+    top: 5%;
+    
+  }
+  .terminos {
+    width: 80%;
+    left: 5%;
+    top: 50%;
+  }
+
+  .terminos p {
+    font-size: 16px;
+    position: relative;
+  }
+  .botones {
+    width: 70%;
+    left: 5%;
+    top: 7%;
+  }
+  .btn-encriptar,
+  .btn-desencriptar
+  .btn-copiar{
+   
+    width: 4%;
+    border-radius: 16px;
+    
+  }
+  .btn-encriptar:hover,
+  .btn-desencriptar:hover 
+  .btn-copiar
+  {
+    margin: 0.3%;
+    width: 47.5%;
+    padding: 1.8%;
+  }
+  .encriptado {
+    width: 80%;
+    height: 15%;
+    left: 10%;
+    top: 80%;
+  }
+  .mensaje-encriptado p
+  mensaje-encriptado h2
+   {
+    width: 100%;
+    top: 5%;
+  }
+  .encriptado1 img
+  .desentriptado img
+  .logo img
+  .muñeco img{
+   
+    top: 0;
+    display: none;
+    visibility: hidden;
+  }
+
+  footer p3{width: 80%;
+    height: 20%;
+    left: 1%;
+    top: 5%;
+
+  }
+
+
+.ul{width: 80%;
+  height: 20%;
+  left: 1%;
+  top: 5%;
+
+}
+
+}
